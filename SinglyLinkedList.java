@@ -1,54 +1,56 @@
-public class SinglyLinkedList {
-    private class Node {
-        int data;
-        Node nxt;
-        Node() {
-            data=0;
-            nxt=null;
-        }
-        Node(int data, Node n) {
-            this.data=data;
-            this.nxt = n;
-        }
+class Node {
+    int data;
+    Node nxt;
+    Node() {
+        data=0;
+        nxt=null;
     }
+    Node(int data, Node n) {
+        this.data=data;
+        this.nxt = n;
+    }
+}
 
-    private Node head;
-    private Node tail;
+public class SinglyLinkedList {
+
     private int size;
 
-    SinglyLinkedList() {
+    public SinglyLinkedList(Node head) {
         size = 0;
-        head=tail=null;
+        head=null;
     }
 
-    public void insertAtBeg(int val) {
+    public Node insertAtBeg(Node head, int val) {
         Node nptr = new Node(val,null);
         if(head == null) {
-            head = tail = nptr;
+            head = nptr;
         } else {
             nptr.nxt = head;
             head = nptr;
         }
         size++;
+        return head;
     }
 
-    public void append(int val) {
+    public Node append(Node head, int val) {
         Node nptr = new Node(val,null);
-        if(head==null) {
-            head=tail=nptr;
+        Node ptr = head;
+        if(head == null) {
+            head=nptr;
         } else {
-            tail.nxt=nptr;
-            tail=nptr;
+            while(ptr.nxt != null) ptr = ptr.nxt;
+            ptr.nxt=nptr;
         }
         size++;
+        return head;
     }
 
-    public void insertAtPos(int pos, int val) {
+    public Node insertAtPos(Node head, int pos, int val) {
         Node nptr = new Node(val,null);
         Node ptr = head;
         if(pos > size) {
             System.out.println("Insertion is not possible. Insert position " + pos + " is more than size " + size + " of nxted list");
-            return;
+            return head;
         }
         for(int i=1; i <= size; i++) {
             if(i == pos - 1) {
@@ -59,9 +61,10 @@ public class SinglyLinkedList {
             ptr = ptr.nxt;
         }
         size++;
+        return head;
     }
 
-    public void display() {
+    public void display(Node head) {
         Node ptr = head;
         System.out.print("head -> ");   
         while(ptr.nxt != null) {
@@ -73,7 +76,7 @@ public class SinglyLinkedList {
         System.out.println(" <- tail");   
     }
 
-    public int get(int pos) {
+    public int get(Node head, int pos) {
         int retVal = -1;
         if(size == 0) {
             System.out.println("List underflow!");
@@ -96,7 +99,7 @@ public class SinglyLinkedList {
         return retVal;
     }
 
-    public int getMiddle() {
+    public int getMiddle(Node head) {
         if(head == null) {
             System.out.println("List underflow!");
             return -1;
@@ -109,7 +112,7 @@ public class SinglyLinkedList {
         return slowPtr.data;
     }
 
-    public int getNthFromEnd(int n) {
+    public int getNthFromEnd(Node head, int n) {
         if(head == null) {
             System.out.println("List underflow!");
             return -1;
