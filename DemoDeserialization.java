@@ -3,12 +3,11 @@ import java.io.Serializable;
 import java.io.ObjectInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.FileNotFoundException;
 
 public class DemoDeserialization {
     private static final String serFileName = "employee.ser";
 
-    public static Object readIn(String serFileName) throws IOException, ClassNotFoundException, FileNotFoundException {
+    public static Object readIn(String serFileName) throws IOException, ClassNotFoundException {
         try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(new File(serFileName)))) {
             Object obj = in.readObject();
             return obj;
@@ -17,6 +16,7 @@ public class DemoDeserialization {
 
     public static void main(String[] args) {
         Employee emp = null;
+        System.out.println("Deserializing Employee from file " + serFileName);
         try {
             emp = (Employee)readIn(serFileName);
         } catch (IOException e) {
@@ -29,7 +29,6 @@ public class DemoDeserialization {
         } catch(Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Deserializing Employee...");
         System.out.println(emp);
     }
 }

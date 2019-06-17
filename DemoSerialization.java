@@ -3,7 +3,6 @@ import java.io.Serializable;
 import java.io.ObjectOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.FileNotFoundException;
 
 class superEmployee implements Serializable {
     public static String companyName;
@@ -36,16 +35,16 @@ class Employee extends superEmployee {
 public class DemoSerialization {
     private static final String serFileName = "employee.ser";
 
-    public static void main(String[] args) throws IOException, FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         Employee emp = new Employee(1,"Subhashis","Nath","Capgemini","BLR","CG CEO");
         System.out.println("Before serializing employee " + emp);
         writeOut(serFileName,emp);
     }
 
-    static void writeOut(String serFileName, Serializable obj) throws IOException, FileNotFoundException {
+    static void writeOut(String serFileName, Serializable obj) throws IOException {
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(new File(serFileName)))) {
             out.writeObject(obj);
         }
-        System.out.printf("Serialized data is saved in " + serFileName + " file");
+        System.out.println("Serialized data is saved in " + serFileName + " file");
     }
 }
