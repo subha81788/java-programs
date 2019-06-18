@@ -37,10 +37,13 @@ public class StrategyPatternTest {
          * but no need to change any code in compare() method iteself. New functionality will be provided by new code.
          */
 
-        List<Student> al = new ArrayList<Student>(); 
-        al.add(new Student(121, "cccc", "bangalore")); 
-        al.add(new Student(131, "aaaa", "nyc")); 
-        al.add(new Student(111, "bbbb", "london")); 
+        List<Student> al = new ArrayList<Student>() {
+            {
+                add(new Student(121, "cccc", "bangalore")); 
+                add(new Student(131, "aaaa", "nyc")); 
+                add(new Student(111, "bbbb", "london")); 
+            }
+        };
   
         System.out.println("Unsorted"); 
         al.forEach(System.out::println);
