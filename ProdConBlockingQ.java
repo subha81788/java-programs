@@ -10,20 +10,20 @@ import java.util.concurrent.TimeUnit;
 
 public class ProdConBlockingQ {
     public static void main(String[] args) {
+        ExecutorService executor = Executors.newFixedThreadPool(3);
         BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(8);
-        ExecutorService executors = Executors.newFixedThreadPool(3);
+
         Callable<String> producerThread = new Producer("Producer",queue);
-        Future<String> producerStatus = executors.submit(producerThread);
+        Future<String> producerStatus = executor.submit(producerThread);
         System.out.println("Producer has started");
+
         Runnable consumerThread1 = new Consumer("Consumer1",queue);
-        executors.execute(consumerThread1);
+        executor.execute(consumerThread1);
         Runnable consumerThread2 = new Consumer("Consumer2",queue);
-        executors.execute(consumerThread2);
+        executor.execute(consumerThread2);
         System.out.println("Consumers have started");
         
-        while (!producerStatus.isDone()) {
-            //System.out.println("Producer thread is not completed yet...."); 
-        }
+        while (!producerStatus.isDone()) { //System.out.println("Producer thread is not completed yet...."); }
 
         try {
             String str = producerStatus.get();
@@ -31,7 +31,7 @@ public class ProdConBlockingQ {
         } catch(InterruptedException | ExecutionException e) {
             System.err.println("Exception " + e);   
         }
-        executors.shutdown();
+        executor.shutdown();
     }
 }
 

@@ -1,20 +1,20 @@
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.Random;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
 
 public class ProdConWaitNotify {
-    private static final int MAX_SIZE = 10;
+    private static final int MAX_Q_SIZE = 10;
 
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<Integer>(); 
-        ExecutorService executors = Executors.newFixedThreadPool(2);
-        Runnable prod = new Producer("producer",q,MAX_SIZE);
-        Runnable con = new Consumer("consumer",q,MAX_SIZE);
-        executors.execute(prod);
-        executors.execute(con);
-        executors.shutdown();
+        Runnable prod = new Producer("producer",q,MAX_Q_SIZE);
+        Runnable con = new Consumer("consumer",q,MAX_Q_SIZE);
+
+        Thread prodThread = new Thread(prod);
+        Thread conThread = new Thread(con);
+
+        prodThread.start();
+        conThread.start();
     }   
 }
 
@@ -31,6 +31,7 @@ class Producer implements Runnable {
 
     @Override
     public void run() {
+        var rand = new Random();
         while(true) {
             synchronized(q) {
                 if(q.size() == maxSize) {
@@ -42,10 +43,9 @@ class Producer implements Runnable {
                         System.err.println(e);   
                     }
                 }
-                Random rand = new Random();
-                int i = rand.nextInt(1000);
+                var i = rand.nextInt(1000);
                 q.add(i);
-                System.out.println("Produced " + i);   
+                System.out.println(this.name + " produced " + i);   
                 q.notify();
                 try {
                     Thread.sleep(100);
@@ -80,8 +80,8 @@ class Consumer implements Runnable {
                         System.err.println(e);   
                     }
                 }
-                int i = q.remove();
-                System.out.println("Consumed " + i);   
+                var i = q.remove();
+                System.out.println(this.name + " consumed " + i);   
                 System.out.println("Queue ---> " + q);   
                 q.notify();
                 try {
