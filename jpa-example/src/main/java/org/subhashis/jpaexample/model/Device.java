@@ -1,11 +1,9 @@
 package org.subhashis.jpaexample.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import net.bytebuddy.agent.builder.AgentBuilder;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -19,10 +17,12 @@ public class Device {
     @OneToOne
     private Gateway gateway;
 
-    private Date provisionDate;
+    private LocalDate provisionDate;
 
     @ManyToMany
-    @JoinTable(name="device_engineer", joinColumns=@JoinColumn(name="device_id"), inverseJoinColumns=@JoinColumn(name="service_engg_id"))
+    @JoinTable(name="device_engineer",
+            joinColumns=@JoinColumn(name="device_id"),
+            inverseJoinColumns=@JoinColumn(name="service_engg_id"))
     private List<Engineer> serviceEngineerList;
 
     public Device() {}
@@ -32,12 +32,12 @@ public class Device {
         this.model = model;
     }
 
-    public Device(String serial, String model, Date date) {
+    public Device(String serial, String model, LocalDate date) {
         this(serial, model);
         this.provisionDate = date;
     }
 
-    public Device(String serial, String model, Gateway gw, Date date) {
+    public Device(String serial, String model, Gateway gw, LocalDate date) {
         this(serial, model, date);
         this.gateway = gw;
     }
@@ -66,11 +66,11 @@ public class Device {
         this.gateway = gateway;
     }
 
-    public Date getProvisionDate() {
+    public LocalDate getProvisionDate() {
         return provisionDate;
     }
 
-    public void setProvisionDate(Date provisionDate) {
+    public void setProvisionDate(LocalDate provisionDate) {
         this.provisionDate = provisionDate;
     }
 

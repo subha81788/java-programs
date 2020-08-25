@@ -27,20 +27,13 @@ public class DeviceController {
 
     @GetMapping(path="/devices/{serial}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Device getDevice(@PathVariable("serial") String serial) {
-        //return deviceService.getDevice(serial);
-        Device device = null;
-        try {
-            device = deviceService.getDevice(serial);
-        } catch(NoSuchElementException e) {
-            throw new DeviceNotFoundException("No device found with serial number " + serial);
-        }
-        return device;
+        return deviceService.getDevice(serial);
     }
 
     @PostMapping(path="/devices",
             consumes=MediaType.APPLICATION_JSON_VALUE,
             produces=MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Device> addDevice(@RequestBody @Validated Device device) {
+    public ResponseEntity<Device> addDevice(@RequestBody Device device) {
         deviceService.addDevice(device);
 
         URI location

@@ -18,13 +18,12 @@ public class DeviceService {
     public List<Device> getAllDevices() {
         return deviceDaoImpl
                 .findAll()
-                .orElseThrow(() -> { throw new DeviceNotFoundException("No device found"); });
+                .orElseThrow(() -> { throw new DeviceNotFoundException("No device data found"); });
     }
 
     public  Device getDevice(String serial) {
-        return deviceDaoImpl.findBySerial(serial).get();
-        //return deviceDaoImpl.findBySerial(serial)
-        //        .orElseThrow(() -> { throw new DeviceNotFoundException(HttpStatus.NOT_FOUND, "No device found"); });
+        return deviceDaoImpl.findBySerial(serial)
+                .orElseThrow(() -> { throw new DeviceNotFoundException("No device found with serial number " + serial); });
     }
 
     public void addDevice(Device dev) {

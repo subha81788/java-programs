@@ -5,6 +5,8 @@ import org.subhashis.jpaexample.model.Device;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -14,11 +16,8 @@ public class DeviceDaoImpl implements DeviceDao {
 
     private List<Device> deviceList = new ArrayList<>();
 
-    public DeviceDaoImpl() throws ParseException {
-        var sdf = new SimpleDateFormat("mm/dd/yyyy");
-        deviceList.add(new Device("AAA123", "PowerStore", sdf.parse("06/12/2020")));
-        deviceList.add(new Device("AAA124", "Beta1", sdf.parse("11/05/2019")));
-        deviceList.add(new Device("AAA125", "Beta2", sdf.parse("08/20/2020")));
+    public List<Device> getDeviceList() {
+        return this.deviceList;
     }
 
     @Override
@@ -55,7 +54,6 @@ public class DeviceDaoImpl implements DeviceDao {
                     devToUpdate.setServiceEngineerList(dev.getServiceEngineerList());
                     return devToUpdate;
                 }).get();
-                //.orElseThrow(() -> new IllegalArgumentException("Invalid argument device passed"));
     }
 
     @Override
