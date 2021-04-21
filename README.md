@@ -1,7 +1,7 @@
 # java-programs
 Programs to help coding interview preparation
 
-Study links
+Study links  
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
@@ -19,8 +19,14 @@ https://developer.mindsphere.io/howto/howto-cf-single-manifest.html
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
 https://hackr.io/blog/microservices-interview-questions  
-
-
-
+https://www.geeksforgeeks.org/create-immutable-class-java  
+https://www.geeksforgeeks.org/different-ways-create-objects-java  
+https://www.geeksforgeeks.org/internal-working-of-hashmap-java  
+https://www.geeksforgeeks.org/iterate-map-java  
+https://dzone.com/articles/how-hashmap-works-internally-in-java  
+http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
+https://www.baeldung.com/java-optional  
+https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
+https://www.geeksforgeeks.org/producer-consumer-solution-using-blockingqueue-in-java-thread  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-concurrent-locks  
