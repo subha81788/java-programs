@@ -14,11 +14,14 @@ https://medium.com/@asce4s/configure-multiple-datasources-in-spring-boot-jdbctem
 https://medium.com/tradeshift-engineering/spring-rabbitmq-tuning-f94723598312  
 https://www.baeldung.com/spring-amqp-error-handling  
 https://dzone.com/articles/rabbitmq-and-spring-boot-integration-with-fault-to  
+https://www.rabbitmq.com/api-guide.html#recovery  
+https://stackoverflow.com/questions/21363302/rabbitmq-message-order-of-delivery  
 https://dzone.com/articles/deploying-spring-boot-on-docker  
 https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
 https://hackr.io/blog/microservices-interview-questions  
+https://dzone.com/articles/transactions-in-microservices  
 
 Java Questions  
 https://www.geeksforgeeks.org/create-immutable-class-java  
@@ -29,7 +32,8 @@ https://dzone.com/articles/how-hashmap-works-internally-in-java
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-optional  
-https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example
+https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example  
+https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
 https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
 https://www.geeksforgeeks.org/producer-consumer-solution-using-blockingqueue-in-java-thread  
 https://www.baeldung.com/java-concurrent-locks  
