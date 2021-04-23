@@ -2,10 +2,11 @@
 Programs to help coding interview preparation
 
 Study links  
+https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
+https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
-https://swathisprasad.medium.com/multi-threading-in-spring-boot-using-completablefuture-a7ca68a0fe48  
 https://www.baeldung.com/hibernate-one-to-many  
 https://www.baeldung.com/jpa-many-to-many  
 https://www.amitph.com/spring-data-jpa-embeddedid  
