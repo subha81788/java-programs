@@ -4,6 +4,8 @@ Programs to help coding interview preparation
 Study links  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
+https://www.baeldung.com/spring-webflux  
+https://www.baeldung.com/spring-mvc-async-vs-webflux  
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
@@ -25,9 +27,11 @@ https://hackr.io/blog/microservices-interview-questions
 https://dzone.com/articles/transactions-in-microservices  
 
 Java Questions  
+https://stackify.com/memory-leaks-java  
 https://www.geeksforgeeks.org/create-immutable-class-java  
 https://www.geeksforgeeks.org/different-ways-create-objects-java  
 https://dzone.com/articles/prevent-breaking-a-singleton-class-pattern  
+https://j2eereference.com/singleton-in-clustered-environment  
 https://www.geeksforgeeks.org/iterate-map-java  
 https://dzone.com/articles/how-hashmap-works-internally-in-java  
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
