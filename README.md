@@ -2,7 +2,9 @@
 Programs to help coding interview preparation
 
 Study links  
+https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
+https://www.baeldung.com/sso-spring-security-oauth2  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
 https://www.baeldung.com/spring-webflux  
 https://www.baeldung.com/spring-mvc-async-vs-webflux  
@@ -37,6 +39,7 @@ https://dzone.com/articles/how-hashmap-works-internally-in-java
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-optional  
+https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples  
 https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example  
 https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
 https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
