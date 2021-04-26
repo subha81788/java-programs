@@ -2,7 +2,10 @@
 Programs to help coding interview preparation
 
 Study links  
+https://hackr.io/blog/microservices-interview-questions  
+https://dzone.com/articles/transactions-in-microservices  
 https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
+https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
 https://www.baeldung.com/sso-spring-security-oauth2  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
@@ -25,8 +28,6 @@ https://dzone.com/articles/deploying-spring-boot-on-docker
 https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
-https://hackr.io/blog/microservices-interview-questions  
-https://dzone.com/articles/transactions-in-microservices  
 
 Java Questions  
 https://stackify.com/memory-leaks-java  
