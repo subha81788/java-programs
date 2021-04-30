@@ -33,6 +33,17 @@ Java Questions
 https://stackify.com/memory-leaks-java  
 https://www.geeksforgeeks.org/create-immutable-class-java  
 https://www.geeksforgeeks.org/different-ways-create-objects-java  
+
+Design Patterns  
+Singleton  
+Factory  
+Abstract Factory  
+Facade  
+Decorator  
+Adapter  
+Strategy  
+Front Controller  
+
 https://dzone.com/articles/prevent-breaking-a-singleton-class-pattern  
 https://j2eereference.com/singleton-in-clustered-environment  
 https://www.geeksforgeeks.org/iterate-map-java  
