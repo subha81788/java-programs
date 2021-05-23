@@ -21,13 +21,15 @@ class Student {
 } 
   
 // Driver class 
-public class StrategyPatternTest { 
+public class PatternStrategyDemo { 
     public static void main (String[] args) { 
 
         // An implementation of Strategy interface Comparator which decides to compare students by rollNo
         Comparator<Student> sortByRollStrategy = (a,b) -> a.rollNo - b.rollNo;
+
         // Another implementation of Strategy interface Comparator which decides compareilter students by name
         Comparator<Student> sortByNameStrategy = (a,b) -> a.name.compareTo(b.name);
+
         // Another implementation of Strategy interface Comparator which decides compareilter students by address
         Comparator<Student> sortByAddressStrategy = (a,b) -> a.address.compareTo(b.address);
 
@@ -39,9 +41,9 @@ public class StrategyPatternTest {
 
         List<Student> al = new ArrayList<Student>() {
             {
-                add(new Student(121, "cccc", "bangalore")); 
-                add(new Student(131, "aaaa", "nyc")); 
-                add(new Student(111, "bbbb", "london")); 
+                add(new Student(121, "Ram", "bangalore")); 
+                add(new Student(131, "Sam", "nyc")); 
+                add(new Student(111, "Bob", "london")); 
             }
         };
   

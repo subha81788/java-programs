@@ -29,11 +29,6 @@ https://developer.mindsphere.io/howto/howto-cf-single-manifest.html
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
 
-Java Questions  
-https://stackify.com/memory-leaks-java  
-https://www.geeksforgeeks.org/create-immutable-class-java  
-https://www.geeksforgeeks.org/different-ways-create-objects-java  
-
 Design Patterns  
 Singleton  
 Factory  
@@ -43,6 +38,13 @@ Decorator
 Adapter  
 Strategy  
 Front Controller  
+
+Java Questions  
+https://stackify.com/memory-leaks-java  
+https://www.geeksforgeeks.org/create-immutable-class-java  
+https://www.geeksforgeeks.org/different-ways-create-objects-java  
+
+
 
 https://dzone.com/articles/prevent-breaking-a-singleton-class-pattern  
 https://j2eereference.com/singleton-in-clustered-environment  

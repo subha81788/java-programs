@@ -1,32 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class PatternQuickSort {
-	
-	private static final int MAX = 1000;
-	private static final int SIZE = 10;
-	
-	public static void main(String[] args) {
-		
-		Random generator = new Random();
-		
-		int[] numbers = new int[SIZE];
-        
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = generator.nextInt(MAX);
-        }
-		
-		System.out.println("Numbers before sort:\n" + Arrays.toString(numbers));
-		
-		
-		Quicksort ob = new Quicksort();
-		
-		ob.sort(numbers);
-		
-		System.out.println("\nNumbers after sort:\n" + Arrays.toString(numbers));
-	}
-}
-
 class Quicksort  {
 
     public void sort(int[] numbers) {
@@ -79,3 +53,30 @@ class Quicksort  {
         numbers[j] = temp;
     }
 }
+
+public class SortQuickDemo {
+
+    private static final int MAX = 1000;
+    private static final int SIZE = 10;
+
+    public static void main(String[] args) {
+
+        Random generator = new Random();
+
+        int[] numbers = new int[SIZE];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = generator.nextInt(MAX);
+        }
+
+        System.out.println("Numbers before sort:\n" + Arrays.toString(numbers));
+
+
+        Quicksort ob = new Quicksort();
+
+        ob.sort(numbers);
+
+        System.out.println("\nNumbers after sort:\n" + Arrays.toString(numbers));
+    }
+}
+
