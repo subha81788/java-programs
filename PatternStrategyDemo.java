@@ -1,4 +1,9 @@
-// Java program to demonstrate Strategy design pattern
+/*
+ * It defines a family of algorithms. It encapsulates each algorithm. It makes the algorithms interchangeable within that family.
+ * The main benefit of using the Strategy pattern is flexibility. The client can choose any algorithm at run time,
+ * you can easily add a new Strategy without modifying classes that use strategies
+ */
+
 import java.util.Comparator; 
 import java.util.ArrayList; 
 import java.util.List; 
@@ -20,8 +25,8 @@ class Student {
     } 
 } 
   
-// Driver class 
 public class PatternStrategyDemo { 
+
     public static void main (String[] args) { 
 
         // An implementation of Strategy interface Comparator which decides to compare students by rollNo
@@ -41,25 +46,21 @@ public class PatternStrategyDemo {
 
         List<Student> al = new ArrayList<Student>() {
             {
-                add(new Student(121, "Ram", "bangalore")); 
-                add(new Student(131, "Sam", "nyc")); 
-                add(new Student(111, "Bob", "london")); 
+                add(new Student(121, "Ram", "Bangalore")); 
+                add(new Student(131, "Sam", "New York City")); 
+                add(new Student(111, "Bob", "London")); 
             }
         };
   
-        System.out.println("Unsorted"); 
-        al.forEach(System.out::println);
+        System.out.println("Students before sorting: " + al); 
   
-        Collections.sort(al, sortByRollStrategy); 
-        System.out.println("\nSorted by rollNo"); 
-        al.forEach(System.out::println);
+        al.sort(sortByRollStrategy);
+        System.out.println("\nStudents sorted by rollNo: " + al); 
   
-        Collections.sort(al, sortByNameStrategy); 
-        System.out.println("\nSorted by name"); 
-        al.forEach(System.out::println);
+        al.sort(sortByNameStrategy);
+        System.out.println("\nStudents sorted by name: " + al); 
 
-        Collections.sort(al, sortByAddressStrategy); 
-        System.out.println("\nSorted by address"); 
-        al.forEach(System.out::println);
+        al.sort(sortByAddressStrategy);
+        System.out.println("\nStudents sorted by address: " + al); 
     } 
 } 

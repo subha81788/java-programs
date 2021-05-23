@@ -1,3 +1,12 @@
+/*
+Builder is a creational design pattern, which allows constructing complex objects step by step.
+
+Unlike other creational patterns, Builder doesn’t require products to have a common interface. That makes it possible
+to produce different products using the same construction process.
+The Builder pattern uses Method chaining however if accessed concurrently, a thread may observe some fields to contain
+inconsistent values.
+ */
+
 public class PatternBuilderDemo {
     public static void main(String[] args) {
         Device device = new Device.DeviceBuilder("BETA1DELL10", Device.Model.BETA1).region("North America").timezone("EDT").gatewaySN("BETA1-GW").build();
@@ -80,22 +89,3 @@ class Device {
     }
 
 }
-
-
-/*
-...
-@Override
-public Builder accept(String... types) {
-    return getRequestBuilder().accept(types);
-}
-...
-
-WebResource resource = Client.create().resource("http://myapp.org/api/v1/data");
-
-WebResource.Builder builder = resource.accept(MediaType.APPLICATION_JSON);
-builder.type(MediaType.APPLICATION_JSON);
-builder.header(HttpHeaders.AUTHORIZATION, "Negotiate " + token);
-
-return builder.get(String.class);
-
-*/

@@ -1,3 +1,14 @@
+/*
+ * The Adapter is a structural pattern, as it's used to identifying a simple way to realize relationships between entities.
+ * The Target interface defines the domain specific interface that the Client used, so the client collaborates with
+ * objects that implement the Target interface. On the other side of things, the Adaptee is the existing interface
+ * that needs adapting in order for our client to interact with it. The Adapter adapts the Adaptee to the Target interface
+ * - in other words, it translates the request from the client to the adaptee. 
+ * as far as the Client is concerned it's just calling the request method of the Target interface, which the Adapter
+ * has implemented. In the background however, the Adapter knows that to return the right result, it needs to call
+ * a different method, specificAdapteeRequest, on the Adaptee.
+ */
+
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
