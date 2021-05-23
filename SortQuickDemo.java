@@ -1,10 +1,18 @@
+/*
+ * QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around
+ * the picked pivot. Below we've picked median as pivot.
+ * The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array
+ * as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x,
+ * and put all greater elements (greater than x) after x. All this should be done in linear time.
+ * Average case time complexity of QuickSort is O(nLogn) although the worst case time complexity is O(n2)
+ */
+
 import java.util.Arrays;
 import java.util.Random;
 
 class Quicksort  {
 
     public void sort(int[] numbers) {
-        // check for empty or null array
         if (numbers ==null || numbers.length==0){
             return;
         }
@@ -12,9 +20,11 @@ class Quicksort  {
     }
 
     private void quicksort(int[] numbers, int low, int high) {
-        int i = low, j = high;
-        // Get the pivot element from the middle of the list
-        int pivot = numbers[low + (high-low)/2];
+        var i = low;
+        var j = high;
+
+        // pick median as the pivot
+        var pivot = numbers[low + (high-low)/2];
 
         // Divide into two lists
         while (i <= j) {
@@ -41,14 +51,16 @@ class Quicksort  {
             }
         }
         // Recursion
-        if (low < j)
+        if (low < j) {
             quicksort(numbers, low, j);
-        if (i < high)
+        }
+        if (i < high) {
             quicksort(numbers, i, high);
+        }
     }
 
     private void swap(int[] numbers, int i, int j) {
-        int temp = numbers[i];
+        var temp = numbers[i];
         numbers[i] = numbers[j];
         numbers[j] = temp;
     }
@@ -61,18 +73,18 @@ public class SortQuickDemo {
 
     public static void main(String[] args) {
 
-        Random generator = new Random();
+        var generator = new Random();
 
         int[] numbers = new int[SIZE];
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (var i = 0; i < numbers.length; i++) {
             numbers[i] = generator.nextInt(MAX);
         }
 
         System.out.println("Numbers before sort:\n" + Arrays.toString(numbers));
 
 
-        Quicksort ob = new Quicksort();
+        var ob = new Quicksort();
 
         ob.sort(numbers);
 
