@@ -1,11 +1,7 @@
 # java-programs
-Programs to help coding interview preparation
+Programs to help coding interview preparation    
 
-Study links  
-https://hackr.io/blog/microservices-interview-questions  
-https://dzone.com/articles/transactions-in-microservices  
-https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
-https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
+## J2EE  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
 https://www.baeldung.com/sso-spring-security-oauth2  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
@@ -29,23 +25,10 @@ https://developer.mindsphere.io/howto/howto-cf-single-manifest.html
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
 
-Design Patterns  
-Singleton  
-Factory  
-Abstract Factory  
-Facade  
-Decorator  
-Adapter  
-Strategy  
-Front Controller  
-
-Java Questions  
+## Java Questions  
 https://stackify.com/memory-leaks-java  
 https://www.geeksforgeeks.org/create-immutable-class-java  
 https://www.geeksforgeeks.org/different-ways-create-objects-java  
-
-
-
 https://dzone.com/articles/prevent-breaking-a-singleton-class-pattern  
 https://j2eereference.com/singleton-in-clustered-environment  
 https://www.geeksforgeeks.org/iterate-map-java  
@@ -61,3 +44,30 @@ https://www.geeksforgeeks.org/producer-consumer-solution-using-blockingqueue-in-
 https://www.baeldung.com/java-concurrent-locks  
 https://javarevisited.blogspot.com/2015/06/java-lock-and-condition-example-producer-consumer.html?_sm_au_=iVVZtn7lJ1JsVt6FscpQ8KHVVHCJF  
 https://dzone.com/articles/java-8-streams-api-laziness  
+
+Microservices  
+https://hackr.io/blog/microservices-interview-questions  
+https://dzone.com/articles/transactions-in-microservices  
+https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
+https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
+https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
+https://dzone.com/articles/circuit-breaker-pattern  
+
+## Design Patterns  
+Singleton  
+Factory  
+Abstract Factory  
+Facade  
+Decorator  
+Adapter  
+Strategy  
+Front Controller  
+
+## DS and Algo  
+https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0  
+https://www.geeksforgeeks.org/tail-recursion  
+https://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html  
+https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html  
+
+## Java programs  
+https://java2blog.com/count-number-occurrences-character-string-java  
