@@ -13,15 +13,15 @@ https://dzone.com/articles/how-hashmap-works-internally-in-java
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-optional  
+https://dzone.com/articles/java-8-streams-api-laziness  
 https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples  
 https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example  
+https://www.baeldung.com/java-concurrent-locks  
+https://www.geeksforgeeks.org/reentrant-lock-java  
+https://javarevisited.blogspot.com/2015/06/java-lock-and-condition-example-producer-consumer.html?_sm_au_=iVVZtn7lJ1JsVt6FscpQ8KHVVHCJF  
+https://www.geeksforgeeks.org/producer-consumer-solution-using-blockingqueue-in-java-thread  
 https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
 https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
-https://www.geeksforgeeks.org/producer-consumer-solution-using-blockingqueue-in-java-thread  
-https://www.baeldung.com/java-concurrent-locks  
-https://javarevisited.blogspot.com/2015/06/java-lock-and-condition-example-producer-consumer.html?_sm_au_=iVVZtn7lJ1JsVt6FscpQ8KHVVHCJF  
-https://dzone.com/articles/java-8-streams-api-laziness  
-
 
 ## Spring  
 https://www.baeldung.com/sso-spring-security-oauth2  
