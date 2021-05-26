@@ -31,24 +31,24 @@ class Producer implements Runnable {
 
     @Override
     public void run() {
-        var rand = new Random();
+        var generator = new Random();
         while(true) {
             synchronized(q) {
                 if(q.size() == maxSize) {
                     System.out.println("Queue ---> " + q);   
                     System.out.println("Queue is full. No space to produce.");   
                     try{
-                        q.wait();
+                        q.wait(2000);
                     } catch(InterruptedException e) {
                         System.err.println(e);   
                     }
                 }
-                var i = rand.nextInt(1000);
+                var i = generator.nextInt(1000);
                 q.add(i);
                 System.out.println(this.name + " produced " + i);   
-                q.notify();
+                q.notifyAll();
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(generator.nextInt(500));
                 } catch(InterruptedException e) {
                     System.err.println(e);   
                 }
@@ -72,7 +72,7 @@ class Consumer implements Runnable {
     public void run() {
         while(true) {
             synchronized(q) {
-                if(q.size() == 0) {
+                if(q.isEmpty()) {
                     System.out.println("Queue is empty. Nothing to consume.");   
                     try{
                         q.wait();
@@ -83,9 +83,9 @@ class Consumer implements Runnable {
                 var i = q.remove();
                 System.out.println(this.name + " consumed " + i);   
                 System.out.println("Queue ---> " + q);   
-                q.notify();
+                q.notifyAll();
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(new Random().nextInt(500));
                 } catch(InterruptedException e) {
                     System.err.println(e);   
                 }
