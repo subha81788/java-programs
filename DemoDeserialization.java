@@ -16,7 +16,7 @@ public class DemoDeserialization {
 
     public static void main(String[] args) {
         Employee emp = null;
-        System.out.println("Deserializing Employee from file " + serFileName);
+        System.out.println("Deserializing Employee from file '" + serFileName + "'");
         try {
             emp = (Employee)readIn(serFileName);
         } catch (IOException e) {
@@ -32,3 +32,8 @@ public class DemoDeserialization {
         System.out.println(emp);
     }
 }
+
+/* Output
+Deserializing Employee from file 'employee.ser'
+id = 0;	first name = Subhashis;	lastName = Nath; companyName = null; companyAddress = null; companyCEO = null
+ */

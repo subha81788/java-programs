@@ -15,7 +15,7 @@ class Employee extends superEmployee {
     private transient int id;
     public String firstName;
     public String lastName;
-    Employee(int id, String firstName, String lastName, String companyName, String companyAddress, String companyCEO) {
+    public Employee(int id, String firstName, String lastName, String companyName, String companyAddress, String companyCEO) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -45,6 +45,11 @@ public class DemoSerialization {
         try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(new File(serFileName)))) {
             out.writeObject(obj);
         }
-        System.out.println("Serialized data is saved in " + serFileName + " file");
+        System.out.println("Serialized data is saved in '" + serFileName + "' file");
     }
 }
+
+/* Output
+Before serializing employee id = 1; first name = Subhashis; lastName = Nath; companyName = Capgemini; companyAddress = BLR; companyCEO = CG CEO
+Serialized data is saved in 'employee.ser' file
+ */
