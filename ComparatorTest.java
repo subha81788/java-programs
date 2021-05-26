@@ -1,3 +1,11 @@
+/*
+ * The Quicksort is used by Arrays.sort for sorting primitive collections because stability isn't required (you won't
+ * know or care if two identical ints were swapped in the sort)
+ * MergeSort or more specifically TimSort is used by Arrays.sort for sorting collections of objects. Stability is required.
+ * Quicksort does not provide for stability, TimSort does.
+ * Collections.sort delegates to Arrays.sort which is why you see the javadoc referencing the MergeSort i.e TimSort.
+ */
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
@@ -26,21 +34,22 @@ class Movie implements Comparable<Movie> {
  
 class ComparatorTest {
     public static void main(String[] args) {
-        ArrayList<Movie> movieList = new ArrayList<Movie>();
+        List<Movie> movieList = new ArrayList<>();
         movieList.add(new Movie("Force Awakens", 8.3, 2015));
         movieList.add(new Movie("Star Wars", 8.7, 1977));
         movieList.add(new Movie("Empire Strikes Back", 8.8, 1980));
         movieList.add(new Movie("Return of the Jedi", 8.4, 1983));
  
+        // By default sort movies by year
         Collections.sort(movieList);
  
         System.out.println("Movies after year wise sorting : ");
         movieList.forEach(movie -> System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear()));
 
-        //Compare Movies by rating
+        //Compare Movies by ascending order of their ratings
         Comparator<Movie> ratingCompare = (Movie m1, Movie m2)->{
-            if (m1.getRating() < m2.getRating()) return -1;
             if (m1.getRating() > m2.getRating()) return 1;
+            if (m1.getRating() < m2.getRating()) return -1;
             else return 0;
         };
         movieList.sort(ratingCompare);
@@ -54,3 +63,25 @@ class ComparatorTest {
         movieList.forEach(movie -> System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear()));
     }
 }
+
+/* Output
+Movies after year wise sorting : 
+Star Wars 8.7 1977
+Empire Strikes Back 8.8 1980
+Return of the Jedi 8.4 1983
+Force Awakens 8.3 2015
+
+
+Movies after rating wise sorting : 
+Force Awakens 8.3 2015
+Return of the Jedi 8.4 1983
+Star Wars 8.7 1977
+Empire Strikes Back 8.8 1980
+
+
+Movies after name wise sorting : 
+Empire Strikes Back 8.8 1980
+Force Awakens 8.3 2015
+Return of the Jedi 8.4 1983
+Star Wars 8.7 1977
+ */
