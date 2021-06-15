@@ -15,9 +15,9 @@ public class ProdConReentrantLock {
 
         // creating producer and consumer threads
         Runnable prod = new Producer("PRODUCER", sharedResource);
-        Runnable con = new Consumer("CONSUMER", sharedResource);
+        Runnable con  = new Consumer("CONSUMER", sharedResource);
         Thread prodThread = new Thread(prod);
-        Thread conThread = new Thread(con);
+        Thread conThread  = new Thread(con);
 
         // starting producer and consumer threads
         prodThread.start();
@@ -29,8 +29,8 @@ public class ProdConReentrantLock {
 class Buffer {
     // producer consumer problem data
     private static final int CAPACITY = 10;
-    private final Queue < Integer > queue = new LinkedList < > ();
-    private final Random theRandom = new Random();
+    private final Queue<Integer> queue = new LinkedList<> ();
+    private final Random generator = new Random();
 
     // lock and condition variables
     private final Lock theLock = new ReentrantLock();
@@ -39,7 +39,7 @@ class Buffer {
 
     public void put() throws InterruptedException {
         while (true) {
-            if (theLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+            if (theLock.tryLock(1, TimeUnit.SECONDS)) {
                 try {
                     while (queue.size() == CAPACITY) {
                         System.out.println(Thread.currentThread().getName() +
@@ -47,7 +47,7 @@ class Buffer {
                         bufferNotEmpty.await();
                     }
 
-                    int number = theRandom.nextInt(1000);
+                    int number = generator.nextInt(1000);
 
                     queue.add(number);
                     System.out.printf("%s produced %d into queue %n", Thread
@@ -57,11 +57,7 @@ class Buffer {
                     System.out.println(Thread.currentThread().getName() +
                         " : Signalling that buffer is full now");
                     bufferNotFull.signalAll();
-                    try {
-                        TimeUnit.MILLISECONDS.sleep(100);
-                    } catch (InterruptedException e) {
-                        System.err.println(e);
-                    }
+                    TimeUnit.MILLISECONDS.sleep(100);
                 } finally {
                     theLock.unlock();
                 }
@@ -71,7 +67,7 @@ class Buffer {
 
     public void get() throws InterruptedException {
         while (true) {
-            if (theLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+            if (theLock.tryLock(1, TimeUnit.SECONDS)) {
                 try {
                     while (queue.size() == 0) {
                         System.out.println(Thread.currentThread().getName() +
@@ -89,11 +85,7 @@ class Buffer {
                             " : Signalling that buffer may be empty now");
                         bufferNotEmpty.signalAll();
                     }
-                    try {
-                        TimeUnit.MILLISECONDS.sleep(300);
-                    } catch (InterruptedException e) {
-                        System.err.println(e);
-                    }
+                    TimeUnit.MILLISECONDS.sleep(300);
                 } finally {
                     theLock.unlock();
                 }
@@ -103,8 +95,8 @@ class Buffer {
 }
 
 class Producer implements Runnable {
-    String name;
-    Buffer sharedResource;
+    private final String name;
+    private final Buffer sharedResource;
 
     public Producer(String name, Buffer sharedResource) {
         this.name = name;
@@ -122,8 +114,8 @@ class Producer implements Runnable {
 }
 
 class Consumer implements Runnable {
-    String name;
-    Buffer sharedResource;
+    private final String name;
+    private final Buffer sharedResource;
 
     public Consumer(String name, Buffer sharedResource) {
         this.name = name;
