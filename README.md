@@ -9,8 +9,8 @@ https://j2eereference.com/singleton-in-clustered-environment
 https://dzone.com/articles/how-hashmap-works-internally-in-java  
 https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
 https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
-ttps://www.javatpoint.com/serialization-in-java  
-ttps://dzone.com/articles/shallow-and-deep-java-cloning  
+https://www.javatpoint.com/serialization-in-java  
+https://dzone.com/articles/shallow-and-deep-java-cloning  
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-optional  
@@ -32,6 +32,7 @@ https://www.greycampus.com/blog/programming/top-spring-interview-questions-and-a
 https://www.interviewbit.com/spring-interview-questions  
 https://www.baeldung.com/spring-mvc-model-model-map-model-view  
 https://www.baeldung.com/spring-boot-interview-questions  
+https://www.javatpoint.com/spring-aop-aspectj-annotation-example  
 https://www.baeldung.com/sso-spring-security-oauth2  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
 https://www.baeldung.com/spring-webflux  
@@ -39,6 +40,8 @@ https://www.baeldung.com/spring-mvc-async-vs-webflux
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
+https://www.baeldung.com/hibernate-second-level-cache  
+https://www.javatpoint.com/hibernate-second-level-cache  
 https://www.baeldung.com/persistence-with-spring-series  
 https://medium.com/@asce4s/configure-multiple-datasources-in-spring-boot-jdbctemplate-asce4s-11013d745a5d  
 https://www.baeldung.com/hibernate-one-to-many  
@@ -60,7 +63,7 @@ https://developer.mindsphere.io/howto/howto-cf-single-manifest.html
 ## Elastic Search  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
-
+https://www.elastic.co/blog/how-to-ingest-data-into-elasticsearch-service  
 
 ## Microservices  
 https://hackr.io/blog/microservices-interview-questions  
