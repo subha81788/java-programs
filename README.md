@@ -26,6 +26,7 @@ https://www.javatpoint.com/volatile-keyword-in-java
 https://www.geeksforgeeks.org/iterate-map-java  
 https://stackify.com/memory-leaks-java  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
+https://www.infoworld.com/article/2077354/app-server-web-server-what-s-the-difference.html  
 
 ## Spring  
 https://www.greycampus.com/blog/programming/top-spring-interview-questions-and-answers  
@@ -33,6 +34,8 @@ https://www.interviewbit.com/spring-interview-questions
 https://www.baeldung.com/spring-mvc-model-model-map-model-view  
 https://www.baeldung.com/spring-boot-interview-questions  
 https://www.javatpoint.com/spring-aop-aspectj-annotation-example  
+https://howtodoinjava.com/spring-aop/aspectj-afterthrowing-annotation-example  
+https://dzone.com/articles/handling-exceptions-using-springs-aop  
 https://www.baeldung.com/sso-spring-security-oauth2  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
 https://www.baeldung.com/spring-webflux  
@@ -47,6 +50,8 @@ https://medium.com/@asce4s/configure-multiple-datasources-in-spring-boot-jdbctem
 https://www.baeldung.com/hibernate-one-to-many  
 https://www.baeldung.com/jpa-many-to-many  
 https://www.amitph.com/spring-data-jpa-embeddedid  
+https://www.baeldung.com/spring-boot-tomcat-connection-pool  
+https://www.restapitutorial.com  
 
 ## Message Queue    
 https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u  
