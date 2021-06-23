@@ -27,6 +27,7 @@ https://www.geeksforgeeks.org/iterate-map-java
 https://stackify.com/memory-leaks-java  
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
 https://www.infoworld.com/article/2077354/app-server-web-server-what-s-the-difference.html  
+https://www.geeksforgeeks.org/how-many-types-of-memory-areas-are-allocated-by-jvm  
 
 ## Spring  
 https://www.greycampus.com/blog/programming/top-spring-interview-questions-and-answers  
@@ -43,6 +44,13 @@ https://www.baeldung.com/spring-mvc-async-vs-webflux
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
+https://www.baeldung.com/spring-boot-tomcat-connection-pool  
+https://www.restapitutorial.com  
+https://dzone.com/articles/handling-exceptions-using-springs-aop  
+https://howtodoinjava.com/spring-aop/aspectj-afterthrowing-annotation-example  
+https://www.baeldung.com/spring-boot-tomcat-connection-pool  
+
+## Persistence  
 https://www.baeldung.com/hibernate-second-level-cache  
 https://www.javatpoint.com/hibernate-second-level-cache  
 https://www.baeldung.com/persistence-with-spring-series  
@@ -50,10 +58,14 @@ https://medium.com/@asce4s/configure-multiple-datasources-in-spring-boot-jdbctem
 https://www.baeldung.com/hibernate-one-to-many  
 https://www.baeldung.com/jpa-many-to-many  
 https://www.amitph.com/spring-data-jpa-embeddedid  
-https://www.baeldung.com/spring-boot-tomcat-connection-pool  
-https://www.restapitutorial.com  
+https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate  
+https://www.journaldev.com/2969/hibernate-caching-first-level-cache  
+https://www.concretepage.com/hibernate/hibernate-session-evict-and-merge-example  
+https://www.baeldung.com/jpa-composite-primary-keys  
+https://www.baeldung.com/hibernate-inheritance  
+https://www.geeksforgeeks.org/association-composition-aggregation-java  
 
-## Message Queue    
+## Message Queue  
 https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u  
 https://dzone.com/articles/rabbitmq-and-spring-boot-integration-with-fault-to  
 https://www.baeldung.com/spring-amqp-error-handling  
