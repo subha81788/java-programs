@@ -2,19 +2,21 @@
 Programs and quick links to help coding interview preparation    
 
 ## Core Java Questions  
+https://javahungry.blogspot.com/2013/06/top-25-most-frequently-asked-core-java.html  
+https://www.geeksforgeeks.org/override-equalsobject-hashcode-method  
+https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
 https://www.geeksforgeeks.org/create-immutable-class-java  
 https://www.geeksforgeeks.org/different-ways-create-objects-java  
 https://dzone.com/articles/prevent-breaking-a-singleton-class-pattern  
 https://j2eereference.com/singleton-in-clustered-environment  
 https://dzone.com/articles/how-hashmap-works-internally-in-java  
-https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java  
-https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
 https://www.javatpoint.com/serialization-in-java  
 https://dzone.com/articles/shallow-and-deep-java-cloning  
 http://tutorials.jenkov.com/java-functional-programming/functional-interfaces.html  
 https://www.baeldung.com/java-comparator-comparable  
 https://www.baeldung.com/java-optional  
 https://dzone.com/articles/java-8-streams-api-laziness  
+https://www.geeksforgeeks.org/difference-hashmap-concurrenthashmap  
 https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples  
 https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example  
 https://www.baeldung.com/java-concurrent-locks  
@@ -30,6 +32,7 @@ https://www.infoworld.com/article/2077354/app-server-web-server-what-s-the-diffe
 https://www.geeksforgeeks.org/how-many-types-of-memory-areas-are-allocated-by-jvm  
 
 ## Spring  
+https://javasterling.com/spring-boot/spring-boot-annotations  
 https://www.greycampus.com/blog/programming/top-spring-interview-questions-and-answers  
 https://www.interviewbit.com/spring-interview-questions  
 https://www.baeldung.com/spring-mvc-model-model-map-model-view  
@@ -38,32 +41,34 @@ https://www.javatpoint.com/spring-aop-aspectj-annotation-example
 https://howtodoinjava.com/spring-aop/aspectj-afterthrowing-annotation-example  
 https://dzone.com/articles/handling-exceptions-using-springs-aop  
 https://www.baeldung.com/sso-spring-security-oauth2  
-https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
-https://www.baeldung.com/spring-webflux  
-https://www.baeldung.com/spring-mvc-async-vs-webflux  
 https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework  
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
-https://www.baeldung.com/spring-boot-tomcat-connection-pool  
 https://www.restapitutorial.com  
-https://dzone.com/articles/handling-exceptions-using-springs-aop  
-https://howtodoinjava.com/spring-aop/aspectj-afterthrowing-annotation-example  
+https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
+https://www.baeldung.com/spring-webflux  
+https://www.baeldung.com/spring-mvc-async-vs-webflux  
+https://www.ibm.com/cloud/learn/web-server-vs-application-server  
 https://www.baeldung.com/spring-boot-tomcat-connection-pool  
 
 ## Persistence  
+https://thorben-janssen.com/ultimate-guide-to-implementing-equals-and-hashcode-with-hibernate  
+https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier  
+https://gist.github.com/jahe/18a4efe614fc73cf184d8ceef8cdc996  
+https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate  
+https://www.journaldev.com/2969/hibernate-caching-first-level-cache  
+https://www.concretepage.com/hibernate/hibernate-session-evict-and-merge-example  
 https://www.baeldung.com/hibernate-second-level-cache  
 https://www.javatpoint.com/hibernate-second-level-cache  
 https://www.baeldung.com/persistence-with-spring-series  
 https://medium.com/@asce4s/configure-multiple-datasources-in-spring-boot-jdbctemplate-asce4s-11013d745a5d  
+https://www.geeksforgeeks.org/association-composition-aggregation-java  
 https://www.baeldung.com/hibernate-one-to-many  
 https://www.baeldung.com/jpa-many-to-many  
 https://www.amitph.com/spring-data-jpa-embeddedid  
-https://www.baeldung.com/hibernate-save-persist-update-merge-saveorupdate  
-https://www.journaldev.com/2969/hibernate-caching-first-level-cache  
-https://www.concretepage.com/hibernate/hibernate-session-evict-and-merge-example  
 https://www.baeldung.com/jpa-composite-primary-keys  
 https://www.baeldung.com/hibernate-inheritance  
-https://www.geeksforgeeks.org/association-composition-aggregation-java  
+https://www.journaldev.com/2954/hibernate-query-language-hql-example-tutorial  
 
 ## Message Queue  
 https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u  
@@ -73,29 +78,33 @@ https://medium.com/tradeshift-engineering/spring-rabbitmq-tuning-f94723598312
 https://www.rabbitmq.com/api-guide.html#recovery  
 https://stackoverflow.com/questions/21363302/rabbitmq-message-order-of-delivery  
 
-## CI/CD  
-https://dzone.com/articles/deploying-spring-boot-on-docker  
-https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
+## Microservices  
+https://microservices.io/refactoring  
+https://hackr.io/blog/microservices-interview-questions  
+https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture  
+https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
+https://dzone.com/articles/transactions-in-microservices  
+https://dzone.com/articles/circuit-breaker-pattern  
+https://www.baeldung.com/spring-cloud-netflix-hystrix  
+https://howtodoinjava.com/microservices/spring-cloud-zipkin-sleuth-tutorial  
+https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
+https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
 
 ## Elastic Search  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
 https://www.elastic.co/blog/how-to-ingest-data-into-elasticsearch-service  
 
-## Microservices  
-https://hackr.io/blog/microservices-interview-questions  
-https://dzone.com/articles/transactions-in-microservices  
-https://www.baeldung.com/spring-cloud-netflix-hystrix  
-https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
-https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
-https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
-https://dzone.com/articles/circuit-breaker-pattern  
+## CI/CD  
+https://dzone.com/articles/deploying-spring-boot-on-docker  
+https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
 
 ## Design Patterns  
+https://www.java67.com/2012/09/top-10-java-design-pattern-interview-question-answer.html  
 Singleton  
 Factory  
 Abstract Factory  
-Facade  
+Facade  (https://howtodoinjava.com/design-patterns/structural/facade-design-pattern)  
 Decorator  
 Adapter  
 Strategy  
