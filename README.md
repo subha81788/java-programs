@@ -83,6 +83,7 @@ https://microservices.io/refactoring
 https://hackr.io/blog/microservices-interview-questions  
 https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture  
 https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247  
+https://www.vinsguru.com/architectural-pattern-orchestration-saga-pattern-implementation-using-kafka  
 https://dzone.com/articles/transactions-in-microservices  
 https://dzone.com/articles/circuit-breaker-pattern  
 https://www.baeldung.com/spring-cloud-netflix-hystrix  
