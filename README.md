@@ -45,11 +45,16 @@ https://www.toptal.com/spring/beginners-guide-to-mvc-with-spring-framework
 https://www.baeldung.com/rest-with-spring-series  
 https://www.javaer101.com/en/article/5541956.html  
 https://www.restapitutorial.com  
+https://www.ibm.com/cloud/learn/web-server-vs-application-server  
+https://www.baeldung.com/spring-boot-tomcat-connection-pool  
+
+## Spring Webflux    
+https://howtodoinjava.com/spring-webflux/webclient-get-post-example  
+https://medium.com/a-developers-odyssey/spring-web-client-exception-handling-cd93cf05b76  
+https://nikeshshetty.medium.com/5-common-mistakes-of-webflux-novices-f8eda0cd6291  
 https://medium.com/sipios/how-to-make-parallel-calls-in-java-springboot-application-and-how-to-test-them-dcc27318a0cf  
 https://www.baeldung.com/spring-webflux  
 https://www.baeldung.com/spring-mvc-async-vs-webflux  
-https://www.ibm.com/cloud/learn/web-server-vs-application-server  
-https://www.baeldung.com/spring-boot-tomcat-connection-pool  
 
 ## Persistence  
 https://thorben-janssen.com/ultimate-guide-to-implementing-equals-and-hashcode-with-hibernate  
@@ -71,12 +76,23 @@ https://www.baeldung.com/hibernate-inheritance
 https://www.journaldev.com/2954/hibernate-query-language-hql-example-tutorial  
 
 ## Message Queue  
-https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u  
-https://dzone.com/articles/rabbitmq-and-spring-boot-integration-with-fault-to  
+https://www.javainuse.com/messaging/rabbitmq/exchange  
+https://www.javainuse.com/spring/spring-boot-rabbitmq-consume  
 https://www.baeldung.com/spring-amqp-error-handling  
+https://dzone.com/articles/message-expiration-pattern-explained  
+https://dzone.com/articles/rabbitmq-and-spring-boot-integration-with-fault-to  
 https://medium.com/tradeshift-engineering/spring-rabbitmq-tuning-f94723598312  
 https://www.rabbitmq.com/api-guide.html#recovery  
+https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u  
 https://stackoverflow.com/questions/21363302/rabbitmq-message-order-of-delivery  
+
+## Spring Cloud  
+https://www.javainuse.com/spring/spring_eurekaregister3  
+https://dzone.com/articles/spring-cloud-stream-with-kafka  
+https://www.baeldung.com/spring-cloud-netflix-hystrix  
+https://howtodoinjava.com/microservices/spring-cloud-zipkin-sleuth-tutorial  
+https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
+https://logz.io/blog/cloud-foundry-elk-stack  
 
 ## Microservices  
 https://microservices.io/refactoring  
@@ -86,9 +102,6 @@ https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-t
 https://www.vinsguru.com/architectural-pattern-orchestration-saga-pattern-implementation-using-kafka  
 https://dzone.com/articles/transactions-in-microservices  
 https://dzone.com/articles/circuit-breaker-pattern  
-https://www.baeldung.com/spring-cloud-netflix-hystrix  
-https://howtodoinjava.com/microservices/spring-cloud-zipkin-sleuth-tutorial  
-https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
 https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
 
 ## Elastic Search  
