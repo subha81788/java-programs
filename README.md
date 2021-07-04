@@ -93,6 +93,7 @@ https://www.baeldung.com/spring-cloud-netflix-hystrix
 https://howtodoinjava.com/microservices/spring-cloud-zipkin-sleuth-tutorial  
 https://www.studytonight.com/post/request-tracing-in-microservices-using-spring-cloud-sleuth-andzipkin  
 https://logz.io/blog/cloud-foundry-elk-stack  
+https://www.confluent.io/blog/spring-for-apache-kafka-deep-dive-part-2-apache-kafka-spring-cloud-stream  
 
 ## Microservices  
 https://microservices.io/refactoring  
@@ -103,6 +104,15 @@ https://www.vinsguru.com/architectural-pattern-orchestration-saga-pattern-implem
 https://dzone.com/articles/transactions-in-microservices  
 https://dzone.com/articles/circuit-breaker-pattern  
 https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
+
+Troubleshooting & Debugging Production Microservices in Kubernetes with Ray Tsang  
+https://www.youtube.com/watch?v=59yCUlQAe-s  
+
+Distributed Tracing - Implementing Latency Analysis for microservices on Cloud Foundry  
+https://www.youtube.com/watch?v=tOKvXicazFw  
+
+Monitoring and Troubleshooting Spring Boot Microservices Architecture - Bogdatov, Gadiya, Thaker  
+https://www.youtube.com/watch?v=utrL19KFUT4  
 
 ## Elastic Search  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
