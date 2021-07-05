@@ -92,6 +92,7 @@ https://dzone.com/articles/all-you-need-to-know-about-asyncronous-messaging-u
 https://stackoverflow.com/questions/21363302/rabbitmq-message-order-of-delivery  
 
 ## Spring Cloud  
+https://developer.okta.com/blog/2019/02/28/spring-microservices-docker  
 https://www.javainuse.com/spring/spring_eurekaregister3  
 https://dzone.com/articles/spring-cloud-stream-with-kafka  
 https://www.baeldung.com/spring-cloud-netflix-hystrix  
@@ -139,7 +140,10 @@ https://www.elastic.co/blog/how-to-ingest-data-into-elasticsearch-service
 ## CI/CD  
 https://dzone.com/articles/deploying-spring-boot-on-docker  
 https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
+
+## Git  
 https://nvie.com/posts/a-successful-git-branching-model  
+https://levelup.gitconnected.com/how-to-squash-git-commits-9a095c1bc1fc  
 
 ## Design Patterns  
 https://www.java67.com/2012/09/top-10-java-design-pattern-interview-question-answer.html  
@@ -162,3 +166,7 @@ https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html
 https://java2blog.com/count-number-occurrences-character-string-java  
 https://stackoverflow.com/questions/51606628/how-can-i-call-second-largest-number-from-arraylist-using-collections  
 https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system  
+
+## SQL  
+https://www.javatpoint.com/sql-nth-highest-salary  
+https://www.w3schools.com/sql/sql_case.asp  
