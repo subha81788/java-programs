@@ -30,6 +30,11 @@ https://stackify.com/memory-leaks-java
 https://dzone.com/articles/how-to-improve-the-performance-of-a-java-applicati  
 https://www.infoworld.com/article/2077354/app-server-web-server-what-s-the-difference.html  
 https://www.geeksforgeeks.org/how-many-types-of-memory-areas-are-allocated-by-jvm  
+https://www.baeldung.com/java-stack-heap  
+https://www.programmersought.com/article/426242359  
+
+HCL Java realtime interview | Java 8 interview questions and answers, springboot microservices kafka  
+https://www.youtube.com/watch?v=uLOF3tSNPgY  
 
 ## Spring  
 https://javasterling.com/spring-boot/spring-boot-annotations  
@@ -105,6 +110,9 @@ https://dzone.com/articles/transactions-in-microservices
 https://dzone.com/articles/circuit-breaker-pattern  
 https://medium.com/@narengowda/what-is-circuitbreaking-in-microservices-2053f4f66882  
 
+Top 25 Microservice Interview Questions Answered - Java Brains
+https://www.youtube.com/watch?v=o36vWQCRrp0
+
 Troubleshooting & Debugging Production Microservices in Kubernetes with Ray Tsang  
 https://www.youtube.com/watch?v=59yCUlQAe-s  
 
@@ -114,6 +122,15 @@ https://www.youtube.com/watch?v=tOKvXicazFw
 Monitoring and Troubleshooting Spring Boot Microservices Architecture - Bogdatov, Gadiya, Thaker  
 https://www.youtube.com/watch?v=utrL19KFUT4  
 
+Microservices interview question and answers | Architecture design and Best practices  
+https://www.youtube.com/watch?v=G0waumbpK48  
+
+Microservices using SpringBoot | Full Example  
+https://www.youtube.com/watch?v=BnknNTN8icw  
+
+Using sagas to maintain data consistency in a microservice architecture by Chris Richardson  
+https://www.youtube.com/watch?v=YPbGW3Fnmbc  
+
 ## Elastic Search  
 https://coralogix.com/log-analytics-blog/42-elasticsearch-query-examples-hands-on-tutorial  
 https://medium.com/tech-explained/getting-hands-on-with-elasticsearch-9969a2894f8a  
@@ -122,6 +139,7 @@ https://www.elastic.co/blog/how-to-ingest-data-into-elasticsearch-service
 ## CI/CD  
 https://dzone.com/articles/deploying-spring-boot-on-docker  
 https://developer.mindsphere.io/howto/howto-cf-single-manifest.html  
+https://nvie.com/posts/a-successful-git-branching-model  
 
 ## Design Patterns  
 https://www.java67.com/2012/09/top-10-java-design-pattern-interview-question-answer.html  
@@ -142,3 +160,5 @@ https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html
 
 ## Java programs  
 https://java2blog.com/count-number-occurrences-character-string-java  
+https://stackoverflow.com/questions/51606628/how-can-i-call-second-largest-number-from-arraylist-using-collections  
+https://javaconceptoftheday.com/solving-real-time-queries-using-java-8-features-employee-management-system  
